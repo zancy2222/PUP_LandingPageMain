@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="FACILITIES/NEW LOGO.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <style>
+      /* Pop-up Form Styles */
+#popupForm {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1); /* White background */
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Additional Styles for Popup Content */
+  .neumorphic-container {
+    padding: 15px;
+    border-radius: 10px;
+    background: #e0e0e0; /* You can remove this style if not needed */
+    box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff; /* You can remove this style if not needed */
+    margin-top: 20px;
+  }
+  
+  /* Button Style */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Polytechnic University of the Philippines</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="FACILITIES/NEW LOGO.png" alt=" " class="nav__logo-img">
+                PUP QUEZON CITY 
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#courses" class="nav__link">Courses</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#branches" class="nav__link">Branches</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">Contact</a>
+                    </li>
+
+                   
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/nav-img.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SLIDER 1 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="FACILITIES/Pylon.jpg" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">PUP QC Campus</h4>
+                                    <span class="home__details-subtitle">Empowering Minds, Building Futures</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 Top Educational Institution</h3>
+                                <h1 class="home__title">Welcome to PUP QC <br> Where Knowledge Meets Innovation</h1>
+                                <p class="home__description">Hello, future leaders! Explore the endless possibilities of
+                                    education at PUP QC.
+                                    Our campus is a hub of creativity, knowledge, and innovation, dedicated to shaping
+                                    bright minds
+                                    for a better tomorrow.
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Apply Now</a>
+                                    <a href="#" class="button--link button--flex">Explore Programs <i
+                                            class='bx bx-right-arrow-alt button__icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SLIDER 2 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="FACILITIES/ADMISSION OFFICE.jpg" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">PUP QC Campus Life</h4>
+                                    <span class="home__details-subtitle">Vibrant and Dynamic Environment</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 Top Campus Experience</h3>
+                                <h1 class="home__title">EXPLORE <br> STUDENT LIFE <br> AT PUP QC</h1>
+                                <p class="home__description">Discover the exciting world of PUP QC campus life. Immerse
+                                    yourself in a dynamic
+                                    environment where learning goes beyond classrooms. Engage in various activities,
+                                    events, and
+                                    make lifelong memories with fellow students.
+
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Join Us</a>
+                                    <a href="#" class="button--link button--flex">Explore Campus Life <i
+                                            class='bx bx-right-arrow-alt button__icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SLIDER 3 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="FACILITIES/INTERFAITH CHAPEL.jpg" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Professor PUP</h4>
+                                    <span class="home__details-subtitle">Inspiring Educator</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#3 Top Inspiring Educator</h3>
+                                <h1 class="home__title">EMPOWERING <br> FUTURE LEADERS <br> AT PUP QC</h1>
+                                <p class="home__description">Meet Professor PUP, the epitome of dedication and passion
+                                    in teaching. With years
+                                    of experience and expertise, Professor PUP inspires and guides students to become
+                                    future leaders
+                                    in their respective fields. Join us at PUP QC and embark on a journey of knowledge
+                                    and
+                                    transformation.
+
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Book Now</a>
+                                    <a href="#" class="button--link button--flex">Track Record <i
+                                            class='bx bx-right-arrow-alt button__icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== CATEGORY ====================-->
+        <section class="section category">
+            <h2 class="section__title">Campus Facilities</h2>
+
+            <div class="category__container container grid">
+                <div class="category__data">
+                    <img src="FACILITIES/COMPUTER LABORATORY ROOM.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Laboratory Room</h3>
+                    <p class="category__description">Experience hands-on learning in state-of-the-art laboratory
+                        facilities.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/ADMISSION OFFICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Admission Building</h3>
+                    <p class="category__description">Explore our welcoming admission building for seamless enrollment
+                        processes.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/AUDIO VISUAL ROOM.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Audio Visual Center</h3>
+                    <p class="category__description">Enhance your learning experience with cutting-edge audio-visual
+                        resources.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/DIRECTOR_S OFFICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Director's Office</h3>
+                    <p class="category__description">Visit the Director's office for guidance and leadership insights.
+                    </p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/FACULTY ROOM.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Faculty Room</h3>
+                    <p class="category__description">Connect with our esteemed faculty members in a collaborative
+                        environment.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/OFFICE OF ACADEMIC PROGRAM.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Office of Academic Programs</h3>
+                    <p class="category__description">Explore diverse academic programs tailored to your interests and
+                        goals.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/LEARNING RESOURCES CENTER.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Learning Resources Center</h3>
+                    <p class="category__description">Access a wealth of learning resources to support your academic
+                        journey.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/DEPARTMENT OF MILITARY SCIENCE AND TACTICS.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Department of Military Science and Tactics</h3>
+                    <p class="category__description">Engage in military science and tactics studies for a well-rounded
+                        education.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/GUIDANCE AND COUNSELING OFFICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Guidance & Counseling Center</h3>
+                    <p class="category__description">Find support and guidance in our dedicated counseling center.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/INTERFAITH CHAPEL.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Interfaith Chapel</h3>
+                    <p class="category__description">Embrace spirituality and connect with others in our interfaith
+                        chapel.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/OFFICE OF STUDENT AFFAIRS AND SERVICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Office of Students Affairs</h3>
+                    <p class="category__description">Get involved in student life and activities through our dedicated
+                        affairs office.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/STUDENT LOUNGE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Student Lounge</h3>
+                    <p class="category__description">Relax and socialize in our comfortable student lounge spaces.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/STUDENT RECORDS SECTION.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Student Records Section</h3>
+                    <p class="category__description">Access and manage your academic records efficiently through our
+                        dedicated section.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/UNIVERSITY SECURITY AND SAFETY OFFICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">University Security and Safety Office</h3>
+                    <p class="category__description">Ensure a secure and safe environment with our dedicated security
+                        office.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/ROTHLEHNER BUILDING.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Rothlehner Building</h3>
+                    <p class="category__description">Explore academic excellence within the walls of the Rothlehner
+                        Building.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="FACILITIES/ACADEMIC BUILDING.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Academic Building</h3>
+                    <p class="category__description">Experience academic excellence in our modern Academic Building.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/COLLECTING AND DISBURESEMENT OFFICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Collecting and Disbursement Office</h3>
+                    <p class="category__description">Manage your financial matters with the Collecting and Disbursement Office.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/Pylon.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Pylon</h3>
+                    <p class="category__description">Explore a wide range of courses tailored to your academic interests and goals.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/ENTRANCE GATE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Entrance Gate</h3>
+                    <p class="category__description">Welcome to our campus through the iconic Entrance Gate.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/GYMNASIUM.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Gymnasium</h3>
+                    <p class="category__description">Stay fit and healthy in our fully-equipped Gymnasium.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/MEDICAL CLINIC.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Medical Clinic</h3>
+                    <p class="category__description">Access healthcare services at our on-campus Medical Clinic.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/MISEREOR BUILDING.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Misereor Building</h3>
+                    <p class="category__description">Engage in philanthropy and social responsibility at the Misereor Building.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/QUALITY ASSURANCE OFFICE.jpg" alt="" class="category__img">
+                    <h3 class="category__title">Quality Assurance Office</h3>
+                    <p class="category__description">Ensure academic quality with our dedicated Quality Assurance Office.</p>
+                </div>
+        
+                <div class="category__data">
+                    <img src="FACILITIES/RECORDS MANAGEMENT OFFICE.png" alt="" class="category__img">
+                    <h3 class="category__title">Records Management</h3>
+                    <p class="category__description">Efficiently manage and access your academic records through Records Management.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--==================== MISSION VISION ====================-->
+        <section class="section about" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">Vision & Mission</h2>
+                    <p class="about__description">
+                        PUP: The National Polytechnic University 
+                    </p>
+                    <p class="about__description">
+                        Ensuring inclusive and equitable quality education and promoting lifelong 
+                        learning opportunities through a re-engineered polytechnic university by committing to:
+                        <ul>
+                        <li>Provide democratized access to educational opportunities for the holistic development 
+                            of individuals with a global perspective.</li>
+                        <br>
+                        <li>Offer industry-oriented curricula that produce highly skilled professionals with 
+                            managerial and technical capabilities and a strong sense of public service for nation building </li>
+                        <br>
+                        <li>Embed a culture of research and innovation</li>
+                        <br>
+                        <li>Continuously develop faculty and employees with the highest level of professionalism</li>
+                        <br>
+                        <li>Engage public and private institutions and other stakeholders for the attainment of social 
+                            development goal</li>
+                        <br>
+                        <li>Establish a strong presence and impact in the international academic community</li>
+                    </p>
+                    <br>
+                    <a href="learn.html" class="button">Learn More</a>
+
+                </div>
+
+                
+                <img src="FACILITIES/Pylon.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!-- Pop-up Form Container -->
+<div id="popupForm" class="popup-form">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopupForm()">&times;</span>
+      <h2>Learn More</h2>
+      <div class="neumorphic-container">
+        <p>
+          <strong>PUP HISTORY</strong>
+          The PUP Quezon City Campus, previously known as PUP Commonwealth Campus, was transferred to the Polytechnic University of the Philippines in 1997 by the Housing and Urban Development Coordinating Council-National Government Center Housing Committee (HUDCC-NGCHC) and the Home Insurance And Guaranty Corporation (HIGC). The objective was to provide quality education and subsidized tuition fees to the urban poor communities of Quezon City. PUP Quezon City offers undergraduate programs in Information Technology, Business Administration, Entrepreneurship, Public Administration, and Business Teacher and Livelihood Education. It also offers a Diploma in Office Management Technology with a specialization in Medical Office Management and graduate degrees in Educational Management, Information Technology, and Public Administration. Two halls were donated to PUP for its purposes by the Sentro sa Ikauunlad ng Kasanayan at Hanapbuhay (SIKHAY) in 1997. The PUP Quezon City Campus has four buildings, including an Academic Building with 12 classrooms, an Audio-Visual Room, a Computer Laboratory, an Ecumenical Chapel, and the Winnie Castelo Welfare Complex, which is a covered court for nonacademic needs. It is considered a miniature of the PUP Main Campus in its design and is known as the "Green Campus." The PUP Quezon City Campus Act was signed into law on June 25, 2019, affirming the university's commitment to democratize access to education for economically challenged students. The campus was created through petitions and negotiations with community organizations, church groups, and government agencies. Its mission is to provide quality education to the urban poor communities of Quezon City and neighboring localities.
+        </p>
+        <hr>
+        <strong>PUP HYMN</strong>
+        <p>
+          Imno ng PUP S. Calabig, S. Roldan, and R. Amaranto Sintang Paaralan Tanglaw ka ng bayan Pandayan ng isip ng kabataan Kami ay dumating nang salat sa yaman Hanap na dunong ay iyong alay Ang layunin mong makatao Dinarangal ang Pilipino Ang iyong aral, diwa, adhikang taglay PUP, aming gabay Paaralang dakila PUP, pinagpala Gagamitin ang karunungan Mula sa iyo, para sa bayan Ang iyong aral, diwa, adhikang taglay PUP, aming gabay Paaralang dakila PUP, pinagpala
+        </p>
+        <hr>
+        <strong>PCC HYMN</strong>
+        <p>
+          Oh! PCC thy glorious name A symbol we'll uphold Forever we will follow on The light that guides us all Thy beacon light has led us through To strive for dignity We'll stand and fight for PCC To keep her name unowned Dear Alma Mater may your brow With Laurels ever crowned All hail the flag of PCC In bright maroon and gold The colors bright for loyalty For service keep unfurled The honors we have always won Shalt live forever on For loyal sons and daughters of our dear PCC Forever thee we'll honor and serve with loyalty.
+        </p>
+        <hr>
+        <strong>PUP Imno Sentenyal</strong>
+        <p>
+          Pacelli S. Eugenio and Antonio R. Regalario Sandaang taon ng iyong kasaysayan Mula sa abang karukhaang kinagisnan Sa hirap at pagdurusang sakdal labis Nagtiis at di nawalan ng pag-asa Sa puso, sa diwa ay nagtanim ng pangarap. Sanlaksang pagsubok binaka Nakipagtunggali sa mga unos ng buhay Ikaâ€™y bumangon, nakibakaâ€™t nagtagumpay Nakamtan ang hangad na dangal Para malayang ikampay Kalayaang bumukal sa kaluluwa ng kabayanihan. Sandaang taon ng iyong kasaysayan Maningning kang bantayog ng kagitingan Luningning ka ng kadakilaan Ilaw sa kaisipan ng Kapilipinuhan Nagpupugay kmi sa iyo Pag-asa ka ng bayan. Dakila ka PUP, sa diwa mong makabayan Sa kaluluwa mong maka-Diyos Dakila kang totoo. PUP, manguna ka Sa husay, sa layaâ€™t katarungan Alay sa dukhang Pilipino Mabuhay ka, magpakailanman.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+<!--==================== AVAILABLE COURSES ====================-->
+<section class="section courses" id="courses">
+    <h2 class="section__title">Available Courses</h2>
+
+    <div class="courses__container container grid">
+        <div class="courses__content">
+            <h3 class="courses__title">Graduate Studies</h3>
+            <span class="courses__subtitle">Offered through the PUP Open University System</span>
+            <ul class="courses__list">
+                <br>
+                <li>Master in Information Technology</li>
+                <li>Master in Educational Management</li>
+                <li>Master in Public Administration</li>
+            </ul>
+        </div>
+
+        <div class="courses__content">
+            <h3 class="courses__title">Undergraduate Degree</h3>
+            <ul class="courses__list">
+                <br>
+                <li>Bachelor of Science in Information Technology (BSIT)</li>
+                <li>Bachelor of Business Technology and Livelihood Education major in Home Economics (BBTLEDHE)</li>
+                <li>Bachelor of Business Technology and Livelihood Education major in Information Communication and Technology (BTLEDICT)</li>
+                <li>Bachelor of Science in Business Administration major in Human Resource Management (BSBAHRM)</li>
+                <li>Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)</li>
+                <li>Bachelor of Science in Entrepreneurship (BSENTREP)</li>
+                <li>Bachelor of Public Administration major in Public Financial Management (BPAPFM)</li>
+                <li>Diploma in Office Management Technology Medical Office Management (DOMTMOM)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--==================== BRANCHES AND CAMPUSES ====================-->
+<section class="section branches" id="branches">
+    <h2 class="section__title">Branches and Campuses</h2>
+
+    <div class="branches__container container grid">
+        <div class="branches__content">
+            <h3 class="branches__title">Metro Manila</h3>
+            <ul class="branches__list">
+                <li>Sta. Mesa, Manila (Main Campus)</li>
+                <li>Taguig City (Branch)</li>
+                <li>Quezon City (Branch)</li>
+                <li>San Juan City (Branch)</li>
+                <li>Parañaque City (Campus)</li>
+            </ul>
+        </div>
+
+        <div class="branches__content">
+            <h3 class="branches__title">Central Luzon</h3>
+            <ul class="branches__list">
+                <li>Bataan (Branch)</li>
+                <li>Sta. Maria, Bulacan (Campus)</li>
+                <li>Pulilan, Bulacan (Campus)</li>
+                <li>Cabiao, Nueva Ecija (Campus)</li>
+            </ul>
+        </div>
+
+        <div class="branches__content">
+            <h3 class="branches__title">South Luzon</h3>
+            <ul class="branches__list">
+                <li>Lopez, Quezon (Branch)</li>
+                <li>Mulanay, Quezon (Branch)</li>
+                <li>Unisan, Quezon (Branch)</li>
+                <li>Ragay, Camarines Sur (Branch)</li>
+                <li>Sto. Tomas, Batangas (Branch)</li>
+                <li>Maragondon, Cavite (Branch)</li>
+                <li>Bansud, Oriental Mindoro (Branch)</li>
+                <li>Sablayan, Occidental Mindoro (Branch)</li>
+                <li>San Pedro, Laguna (Campus)</li>
+                <li>Biñan, Laguna (Campus)</li>
+                <li>Sta. Rosa, Laguna (Campus)</li>
+                <li>Calauan, Laguna (Campus)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <!--==================== CONTACT ====================-->
+<section class="section contact" id="contacts">
+    <h2 class="section__title">Contact Us</h2>
+
+    <div class="contact__container container">
+        <div class="contact__info">
+            <h3 class="contact__subtitle">Visit Our Campus</h3>
+            <p class="contact__text">Don Fabian St., Commonwealth, Quezon City, Philippines</p>
+
+            <h3 class="contact__subtitle">Call Us</h3>
+            <p class="contact__text">Phone: +1 (555) 123-4567</p>
+
+            <h3 class="contact__subtitle">Email Us</h3>
+            <p class="contact__text">Email: info@pupqc.edu.ph</p>
+        </div>
+
+        <div class="contact__form">
+            <form action="#" class="form">
+                <div class="form__group">
+                    <input type="text" placeholder="Your Name" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" placeholder="Your Email" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <textarea placeholder="Your Message" class="form__textarea" required></textarea>
+                </div>
+                <button class="button form__button" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo.png" alt="" class="footer__logo-img">
+                    PUP QC
+                </a>
+
+                <p class="footer__description">SOCIALS:</p>
+
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/ThePUPQCCampusOfficial" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">News</a>
+                    </li>
+                </ul>
+            </div>
+
+        
+            <div class="footer__content">
+                <h3 class="footer__title">Our University</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Our mision</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="FACILITIES/NEW LOGO.png" alt="" class="footer__img-one">
+        <img src="FACILITIES/NEW LOGO.png" alt="" class="footer__img-two">
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+      
+</body>
+
+</html>
